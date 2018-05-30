@@ -938,7 +938,7 @@ session_start();
                     </div>
                 </div>
                 <div style="padding: 40px 0;" class="wrapper-footer-menu col-md-8 col-xs-12 col-sm-12">
-                    <div class="menu-footer col-md-2 col-xs-4"><p>Tentang Lintasarta</p></div>
+                    <!--<div class="menu-footer col-md-2 col-xs-4"><p>Tentang Lintasarta</p></div>-->
                     <!--<div class="menu-footer col-md-2 col-xs-4"><p>Hubungi Kami</p></div>
                     <div class="menu-footer col-md-2 col-xs-4"><p>Product Inquiry</p></div>
                     <div class="menu-footer col-md-1 col-xs-4"><p>CSR</p></div>
