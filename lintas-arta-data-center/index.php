@@ -975,7 +975,7 @@ session_start();
         </div>-->
         <div class="">
             <button style="background-color:#febe41;" class="btn-float btn" onclick="location.href = 'http://develop-neodigital.com/lintas-arta-data-center/#home'">
-              <img src="images/forms_icon.png" class="img-responsive">
+              <img src="../../lintas-arta-cloud/images/forms_icon.png" class="img-responsive">
             </button>
         </div>
 
