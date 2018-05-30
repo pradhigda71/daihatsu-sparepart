@@ -31,16 +31,15 @@ if ($conn->query($sql) === TRUE) {
     //echo "New record created successfully";
     $mail = new PHPMailer;
     // Konfigurasi SMTP
-
     $mail->isSMTP();
 
-    $mail->Host = "mail.pradhigda.com";
-    $mail->SMTPDebug = 0;
-    $mail->Port = 465;                                    // Set the SMTP port
-    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'lintasarta@pradhigda.com';
-    $mail->Password = 'lintasarta';
-    $mail->SMTPSecure = 'ssl';
+    $mail->Host = "mail.neodigital.co.id";
+    $mail->SMTPDebug = 1;
+    //$mail->Port = 25;
+    $mail->Port = 587;                                      // Set the SMTP port
+    $mail->SMTPAuth = true;                                   // Enable SMTP authentication
+    $mail->Username = 'rayno@neodigital.co.id';
+    $mail->Password = 'neodigital123';
 
     $mail->setFrom('lintasarta@pradhigda.com', 'Admin Lintasarta');
     $mail->addReplyTo('lintasarta@pradhigda.com', 'Admin Lintasarta');
