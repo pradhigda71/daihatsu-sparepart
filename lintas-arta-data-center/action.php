@@ -31,23 +31,24 @@ if ($conn->query($sql) === TRUE) {
     //echo "New record created successfully";
     $mail = new PHPMailer;
     // Konfigurasi SMTP
-
     $mail->isSMTP();
 
-    $mail->Host = "mail.pradhigda.com";
-    $mail->SMTPDebug = 0;
-    $mail->Port = 465;                                    // Set the SMTP port
-    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'lintasarta@pradhigda.com';
-    $mail->Password = 'lintasarta';
-    $mail->SMTPSecure = 'ssl';
+    $mail->Host = "mail.neodigital.co.id";
+    $mail->SMTPDebug = 1;
+    //$mail->Port = 25;
+    $mail->Port = 587;                                      // Set the SMTP port
+    $mail->SMTPAuth = true;                                   // Enable SMTP authentication
+    $mail->Username = 'rayno@neodigital.co.id';
+    $mail->Password = 'neodigital123';
+    //$mail->SMTPSecure = 'tls';
 
-    $mail->setFrom('lintasarta@pradhigda.com', 'Admin Lintasarta');
-    $mail->addReplyTo('lintasarta@pradhigda.com', 'Admin Lintasarta');
+    $mail->setFrom('mail@lintasarta.com', 'Admin Lintasarta');
+    $mail->addReplyTo('mail@lintasarta.com', 'Admin Lintasarta');
     // Menambahkan penerima
     $mail->addAddress('yaniarpradhigda@gmail.com');
     $mail->addAddress('info@lintasarta.co.id');
     // Menambahkan cc atau bcc
+    $mail->addCC('emeraldo.aufar@lintasarta.co.id');
     $mail->addCC('desyaalathifaa@gmail.com');
     //$mail->addBCC('bcc@contoh.com');
     // Subjek email
@@ -79,7 +80,7 @@ if ($conn->query($sql) === TRUE) {
     $mail->Body = $mailContent;
     // Kirim email
     if(!$mail->send()){
-        echo 'Pesan tidak dapat dikirim.';
+        //echo 'Pesan tidak dapat dikirim.';
         echo 'Mailer Error: ' . $mail->ErrorInfo;
         exit;
     }else{
