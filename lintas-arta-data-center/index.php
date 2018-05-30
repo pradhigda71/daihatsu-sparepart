@@ -69,7 +69,7 @@ session_start();
             @media(min-width : 1350px) {
               .txt-under-btn {
                 font-size: 12px;
-                margin-top: 20px;
+                margin-top: 55px;
                 text-align: left !important;
                 }
               .header-nav {
@@ -80,10 +80,10 @@ session_start();
                 max-width: 250px !important ;
               }
               .banner-img {
-                height: 605px !important ;
+                height: 630px !important ;
               }
               .banner-form {
-                height: 605px !important ;
+                height: 630px !important ;
               }
 
               .telp {
@@ -304,6 +304,11 @@ session_start();
                 font-size: 12px;
             }
             @media(max-width: 770px){
+                .txt-under-btn {
+                  font-size: 12px;
+                  margin-top: 55px;
+                  text-align: left !important;
+                }
                 .div-keamanan {
                     background: #e7e2e2;
                 }
@@ -368,7 +373,11 @@ session_start();
                 }
             }
             @media(max-width : 430px){
-
+                .txt-under-btn {
+                  font-size: 12px;
+                  margin-top: 75px;
+                  text-align: left !important;
+                }
                 .wrapper-img-desc {
                     padding-left: 10px ;
                     padding-right: 10px ;
@@ -556,7 +565,12 @@ session_start();
                             <button type="submit" style="border-radius:0px;float:right;" class="btn btn-warning">Submit</button>
                         </div>
                         <div>
-                            <p style="cursor:pointer;" data-toggle="modal" data-target="#myModals1" class="txt-under-btn">Atau jadwalkan pertemuan dengan tim kami untuk berdiskusi lebih lanjut</p>
+                            <p style="cursor:pointer;"
+                               data-toggle="modal"
+                               data-target="#myModals1"
+                               class="txt-under-btn">
+                               Atau jadwalkan pertemuan dengan tim kami untuk berdiskusi lebih lanjut
+                            </p>
                         </div>
                     </form>
                 </div>
