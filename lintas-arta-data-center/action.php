@@ -33,13 +33,13 @@ if ($conn->query($sql) === TRUE) {
     // Konfigurasi SMTP
     $mail->isSMTP();
 
-    $mail->Host = "mail.neodigital.co.id";
-    $mail->SMTPDebug = 1;
+    $mail->Host = "smtp.google.com";
+    $mail->SMTPDebug = 0;
     //$mail->Port = 25;
     $mail->Port = 587;                                      // Set the SMTP port
     $mail->SMTPAuth = true;                                   // Enable SMTP authentication
-    $mail->Username = 'rayno@neodigital.co.id';
-    $mail->Password = 'neodigital123';
+    $mail->Username = 'lintasarta.pemasaran@gmail.com';
+    $mail->Password = '*******';//change your password
     //$mail->SMTPSecure = 'tls';
 
     $mail->setFrom('mail@lintasarta.com', 'Admin Lintasarta');
