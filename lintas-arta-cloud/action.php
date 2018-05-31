@@ -33,21 +33,20 @@ if ($conn->query($sql) === TRUE) {
     // Konfigurasi SMTP
     $mail->isSMTP();
 
-    $mail->Host = "mail.neodigital.co.id";
-    $mail->SMTPDebug = 1;
+    $mail->Host = "smtp.google.com";
+    $mail->SMTPDebug = 0;
     //$mail->Port = 25;
     $mail->Port = 587;                                      // Set the SMTP port
     $mail->SMTPAuth = true;                                   // Enable SMTP authentication
-    $mail->Username = 'rayno@neodigital.co.id';
-    $mail->Password = 'neodigital123';
+    $mail->Username = 'lintasarta.pemasaran@gmail.com';
+    $mail->Password = '*******';//change your password
+    //$mail->SMTPSecure = 'tls';
 
-    $mail->setFrom('lintasarta@pradhigda.com', 'Admin Lintasarta');
-    $mail->addReplyTo('lintasarta@pradhigda.com', 'Admin Lintasarta');
+    $mail->setFrom('mail@lintasarta.com', 'Admin Lintasarta');
+    $mail->addReplyTo('mail@lintasarta.com', 'Admin Lintasarta');
     // Menambahkan penerima
-    $mail->addAddress('yaniarpradhigda@gmail.com');
     $mail->addAddress('info@lintasarta.co.id');
     // Menambahkan cc atau bcc
-    $mail->addCC('desyaalathifaa@gmail.com');
     //$mail->addBCC('bcc@contoh.com');
     // Subjek email
     $mail->Subject = 'LP Cloud Consultation';
