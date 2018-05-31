@@ -45,11 +45,9 @@ if ($conn->query($sql) === TRUE) {
     $mail->setFrom('mail@lintasarta.com', 'Admin Lintasarta');
     $mail->addReplyTo('mail@lintasarta.com', 'Admin Lintasarta');
     // Menambahkan penerima
-    $mail->addAddress('yaniarpradhigda@gmail.com');
     $mail->addAddress('info@lintasarta.co.id');
     // Menambahkan cc atau bcc
     $mail->addCC('emeraldo.aufar@lintasarta.co.id');
-    $mail->addCC('desyaalathifaa@gmail.com');
     //$mail->addBCC('bcc@contoh.com');
     // Subjek email
     $mail->Subject = 'LP Form Inquiry';
